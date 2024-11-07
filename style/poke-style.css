@@ -1,0 +1,27 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+    gap: 10px;
+}
+
+/* .pokemon {
+    width: 100px;
+    height: 100px;
+} */
+
+.pokemon-container {
+    width: 124px;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5%;
+
+    &:hover {
+        background-color: lightgray;
+        transform: scale(1.1);
+    }
+}
