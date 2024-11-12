@@ -11,8 +11,8 @@
 } */
 
 .pokemon-container {
-    width: 124px;
-    height: 124px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;

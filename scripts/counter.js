@@ -6,20 +6,21 @@ let levelRequierement = 20;
 let lastLevel = 0;
 let numberToAdd = 1;
 
-let numberOfCookie = 1; // Same déclaration -> changer !
+let numberOfCookies = 1; // Same déclaration -> changer !
 
 const COOKIEBUTTON = document.querySelector('#cookieClick')
 COOKIEBUTTON.addEventListener('click', function () {
     let cookieID = document.querySelector('#cookieTotal');
     let numberOfCookie = parseInt(cookieID.innerHTML, 10); // Same déclaration -> changer !
     let levels = document.querySelector('#levelNumber');
-    numberOfCookie += numberOfCookie;
+    
+    numberOfCookie += numberOfCookies;
+    
     console.log(numberOfCookie)
     if ((numberOfCookie - lastLevel) / levelRequierement >= 1) {
         levels.innerHTML++;
         levelRequierement += 20;
         lastLevel = numberOfCookie;
-        console.log("++")
     }
 
     cookieID.innerHTML = numberOfCookie;
@@ -28,5 +29,5 @@ COOKIEBUTTON.addEventListener('click', function () {
 
 const NEWMONSTER = document.querySelector('#addMonster')
 NEWMONSTER.addEventListener('click', function () {
-    numberOfCookie += numberToAdd;
+    numberOfCookies += numberToAdd;
 })
